@@ -1,0 +1,6 @@
+framework module Pods_GarageSaleAppUITests {
+  umbrella header "Pods-GarageSaleAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

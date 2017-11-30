@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AD4E80C9D22AED79C4EEAAE /* Pods_GarageSaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E419FB91DEF46134BB9025EC /* Pods_GarageSaleAppUITests.framework */; };
+		0C08537B1FC00EAF00CF640A /* ListingInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0853791FC00EAF00CF640A /* ListingInfoCell.swift */; };
+		0C08537C1FC00EAF00CF640A /* ListingInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C08537A1FC00EAF00CF640A /* ListingInfoCell.xib */; };
+		0C41E5CD1FCCCFB900E769AB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41E5CC1FCCCFB900E769AB /* Users.swift */; };
+		0CB9558F1FC2AA4A00A276FC /* GarageSalesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB9558E1FC2AA4A00A276FC /* GarageSalesTVC.swift */; };
+		0CB955D21FC391A700A276FC /* GarageSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB955D01FC391A700A276FC /* GarageSaleTableViewCell.swift */; };
+		0CB955D31FC391A700A276FC /* GarageSaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB955D11FC391A700A276FC /* GarageSaleTableViewCell.xib */; };
+		0CD3ED611FBD2EA400A4253E /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3ED601FBD2EA400A4253E /* Listing.swift */; };
+		0CD3ED661FBD408B00A4253E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3ED651FBD408B00A4253E /* GoogleService-Info.plist */; };
+		0CD3ED6A1FBD4D0800A4253E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3ED691FBD4D0800A4253E /* SignInViewController.swift */; };
+		0CF122DA1FBF76F400EB8B79 /* ListingDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF122D81FBF76F400EB8B79 /* ListingDetailImageCell.swift */; };
+		0CF122DB1FBF76F400EB8B79 /* ListingDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF122D91FBF76F400EB8B79 /* ListingDetailImageCell.xib */; };
+		0CF122DE1FBF787C00EB8B79 /* ListingDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF122DD1FBF787C00EB8B79 /* ListingDetailTVC.swift */; };
+		0CFDBFAF1FBBE9510057C1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFAE1FBBE9510057C1AB /* AppDelegate.swift */; };
+		0CFDBFB11FBBE9510057C1AB /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFB01FBBE9510057C1AB /* ListingVC.swift */; };
+		0CFDBFB41FBBE9510057C1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDBFB21FBBE9510057C1AB /* Main.storyboard */; };
+		0CFDBFB61FBBE9510057C1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDBFB51FBBE9510057C1AB /* Assets.xcassets */; };
+		0CFDBFB91FBBE9510057C1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDBFB71FBBE9510057C1AB /* LaunchScreen.storyboard */; };
+		0CFDBFC41FBBE9510057C1AB /* GarageSaleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFC31FBBE9510057C1AB /* GarageSaleAppTests.swift */; };
+		0CFDBFCF1FBBE9510057C1AB /* GarageSaleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFCE1FBBE9510057C1AB /* GarageSaleAppUITests.swift */; };
+		0CFDBFDD1FBC1A780057C1AB /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFDC1FBC1A780057C1AB /* CustomNavController.swift */; };
+		DDA7E0D62FB9DDC0F3A2C42F /* Pods_GarageSaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B73876CE96C18E2370B3 /* Pods_GarageSaleApp.framework */; };
+		F1E99048B3D8C3C266F224F3 /* Pods_GarageSaleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17A70E140F291D6BCE2C56B /* Pods_GarageSaleAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CFDBFC01FBBE9510057C1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CFDBFA31FBBE9510057C1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CFDBFAA1FBBE9510057C1AB;
+			remoteInfo = GarageSaleApp;
+		};
+		0CFDBFCB1FBBE9510057C1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CFDBFA31FBBE9510057C1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CFDBFAA1FBBE9510057C1AB;
+			remoteInfo = GarageSaleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0853791FC00EAF00CF640A /* ListingInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInfoCell.swift; sourceTree = "<group>"; };
+		0C08537A1FC00EAF00CF640A /* ListingInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingInfoCell.xib; sourceTree = "<group>"; };
+		0C41E5CC1FCCCFB900E769AB /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		0C9D29FF1FCF7FBD00E256D5 /* GarageSaleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GarageSaleApp.entitlements; sourceTree = "<group>"; };
+		0CB9558E1FC2AA4A00A276FC /* GarageSalesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageSalesTVC.swift; sourceTree = "<group>"; };
+		0CB955D01FC391A700A276FC /* GarageSaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageSaleTableViewCell.swift; sourceTree = "<group>"; };
+		0CB955D11FC391A700A276FC /* GarageSaleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarageSaleTableViewCell.xib; sourceTree = "<group>"; };
+		0CD3ED601FBD2EA400A4253E /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		0CD3ED651FBD408B00A4253E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CD3ED691FBD4D0800A4253E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0CF122D81FBF76F400EB8B79 /* ListingDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailImageCell.swift; sourceTree = "<group>"; };
+		0CF122D91FBF76F400EB8B79 /* ListingDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingDetailImageCell.xib; sourceTree = "<group>"; };
+		0CF122DD1FBF787C00EB8B79 /* ListingDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailTVC.swift; sourceTree = "<group>"; };
+		0CFDBFAB1FBBE9510057C1AB /* GarageSaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarageSaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDBFAE1FBBE9510057C1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CFDBFB01FBBE9510057C1AB /* ListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
+		0CFDBFB31FBBE9510057C1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CFDBFB51FBBE9510057C1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CFDBFB81FBBE9510057C1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CFDBFBA1FBBE9510057C1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFDBFBF1FBBE9510057C1AB /* GarageSaleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarageSaleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDBFC31FBBE9510057C1AB /* GarageSaleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageSaleAppTests.swift; sourceTree = "<group>"; };
+		0CFDBFC51FBBE9510057C1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFDBFCA1FBBE9510057C1AB /* GarageSaleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarageSaleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDBFCE1FBBE9510057C1AB /* GarageSaleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageSaleAppUITests.swift; sourceTree = "<group>"; };
+		0CFDBFD01FBBE9510057C1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFDBFDC1FBC1A780057C1AB /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		27B3CC2F6182F7E2DA285369 /* Pods-GarageSaleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageSaleAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageSaleAppTests/Pods-GarageSaleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EF45DC476550DB71F0FADB0 /* Pods-GarageSaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageSaleAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageSaleAppUITests/Pods-GarageSaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		37DB65FED6E3FC6C8E116402 /* Pods-GarageSaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageSaleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageSaleApp/Pods-GarageSaleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		63DF9FDCD7BF7D78F47F4A39 /* Pods-GarageSaleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageSaleAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageSaleAppTests/Pods-GarageSaleAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D0846D78831F6A617711FCE /* Pods-GarageSaleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageSaleAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageSaleAppUITests/Pods-GarageSaleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3E4B73876CE96C18E2370B3 /* Pods_GarageSaleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageSaleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41257D04B3109366E7014C3 /* Pods-GarageSaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageSaleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageSaleApp/Pods-GarageSaleApp.release.xcconfig"; sourceTree = "<group>"; };
+		E17A70E140F291D6BCE2C56B /* Pods_GarageSaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageSaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E419FB91DEF46134BB9025EC /* Pods_GarageSaleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageSaleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CFDBFA81FBBE9510057C1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7E0D62FB9DDC0F3A2C42F /* Pods_GarageSaleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDBFBC1FBBE9510057C1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E99048B3D8C3C266F224F3 /* Pods_GarageSaleAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDBFC71FBBE9510057C1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD4E80C9D22AED79C4EEAAE /* Pods_GarageSaleAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB955CC1FC38F8E00A276FC /* GarageSalesView */ = {
+			isa = PBXGroup;
+			children = (
+				0CB9558E1FC2AA4A00A276FC /* GarageSalesTVC.swift */,
+				0CB955CF1FC3914A00A276FC /* GarageSaleFileAndXib */,
+			);
+			path = GarageSalesView;
+			sourceTree = "<group>";
+		};
+		0CB955CF1FC3914A00A276FC /* GarageSaleFileAndXib */ = {
+			isa = PBXGroup;
+			children = (
+				0CB955D01FC391A700A276FC /* GarageSaleTableViewCell.swift */,
+				0CB955D11FC391A700A276FC /* GarageSaleTableViewCell.xib */,
+			);
+			path = GarageSaleFileAndXib;
+			sourceTree = "<group>";
+		};
+		0CD3ED5F1FBD2E3B00A4253E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C41E5CC1FCCCFB900E769AB /* Users.swift */,
+				0CD3ED601FBD2EA400A4253E /* Listing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CD3ED621FBD2EB500A4253E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CD3ED691FBD4D0800A4253E /* SignInViewController.swift */,
+				0CB955CC1FC38F8E00A276FC /* GarageSalesView */,
+				0CF122DC1FBF783400EB8B79 /* ListingDetail */,
+				0CFDBFB01FBBE9510057C1AB /* ListingVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CF122941FBE89DD00EB8B79 /* ListingDetailCellFileAndXib */ = {
+			isa = PBXGroup;
+			children = (
+				0CF122D81FBF76F400EB8B79 /* ListingDetailImageCell.swift */,
+				0CF122D91FBF76F400EB8B79 /* ListingDetailImageCell.xib */,
+				0C0853791FC00EAF00CF640A /* ListingInfoCell.swift */,
+				0C08537A1FC00EAF00CF640A /* ListingInfoCell.xib */,
+			);
+			path = ListingDetailCellFileAndXib;
+			sourceTree = "<group>";
+		};
+		0CF122DC1FBF783400EB8B79 /* ListingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0CF122DD1FBF787C00EB8B79 /* ListingDetailTVC.swift */,
+				0CF122941FBE89DD00EB8B79 /* ListingDetailCellFileAndXib */,
+			);
+			path = ListingDetail;
+			sourceTree = "<group>";
+		};
+		0CFDBFA21FBBE9510057C1AB = {
+			isa = PBXGroup;
+			children = (
+				0CFDBFAD1FBBE9510057C1AB /* GarageSaleApp */,
+				0CFDBFC21FBBE9510057C1AB /* GarageSaleAppTests */,
+				0CFDBFCD1FBBE9510057C1AB /* GarageSaleAppUITests */,
+				0CFDBFAC1FBBE9510057C1AB /* Products */,
+				42C2D0D7AAE80792AAA82EA5 /* Pods */,
+				2CFAA5E7529E3ACDB6585E0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0CFDBFAC1FBBE9510057C1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDBFAB1FBBE9510057C1AB /* GarageSaleApp.app */,
+				0CFDBFBF1FBBE9510057C1AB /* GarageSaleAppTests.xctest */,
+				0CFDBFCA1FBBE9510057C1AB /* GarageSaleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CFDBFAD1FBBE9510057C1AB /* GarageSaleApp */ = {
+			isa = PBXGroup;
+			children = (
+				0C9D29FF1FCF7FBD00E256D5 /* GarageSaleApp.entitlements */,
+				0CFDBFB21FBBE9510057C1AB /* Main.storyboard */,
+				0CFDBFAE1FBBE9510057C1AB /* AppDelegate.swift */,
+				0CD3ED5F1FBD2E3B00A4253E /* Models */,
+				0CD3ED621FBD2EB500A4253E /* Views */,
+				0CFDBFDC1FBC1A780057C1AB /* CustomNavController.swift */,
+				0CFDBFB51FBBE9510057C1AB /* Assets.xcassets */,
+				0CFDBFB71FBBE9510057C1AB /* LaunchScreen.storyboard */,
+				0CFDBFBA1FBBE9510057C1AB /* Info.plist */,
+				0CD3ED651FBD408B00A4253E /* GoogleService-Info.plist */,
+			);
+			path = GarageSaleApp;
+			sourceTree = "<group>";
+		};
+		0CFDBFC21FBBE9510057C1AB /* GarageSaleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDBFC31FBBE9510057C1AB /* GarageSaleAppTests.swift */,
+				0CFDBFC51FBBE9510057C1AB /* Info.plist */,
+			);
+			path = GarageSaleAppTests;
+			sourceTree = "<group>";
+		};
+		0CFDBFCD1FBBE9510057C1AB /* GarageSaleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDBFCE1FBBE9510057C1AB /* GarageSaleAppUITests.swift */,
+				0CFDBFD01FBBE9510057C1AB /* Info.plist */,
+			);
+			path = GarageSaleAppUITests;
+			sourceTree = "<group>";
+		};
+		2CFAA5E7529E3ACDB6585E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4B73876CE96C18E2370B3 /* Pods_GarageSaleApp.framework */,
+				E17A70E140F291D6BCE2C56B /* Pods_GarageSaleAppTests.framework */,
+				E419FB91DEF46134BB9025EC /* Pods_GarageSaleAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C2D0D7AAE80792AAA82EA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB65FED6E3FC6C8E116402 /* Pods-GarageSaleApp.debug.xcconfig */,
+				D41257D04B3109366E7014C3 /* Pods-GarageSaleApp.release.xcconfig */,
+				27B3CC2F6182F7E2DA285369 /* Pods-GarageSaleAppTests.debug.xcconfig */,
+				63DF9FDCD7BF7D78F47F4A39 /* Pods-GarageSaleAppTests.release.xcconfig */,
+				9D0846D78831F6A617711FCE /* Pods-GarageSaleAppUITests.debug.xcconfig */,
+				2EF45DC476550DB71F0FADB0 /* Pods-GarageSaleAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CFDBFAA1FBBE9510057C1AB /* GarageSaleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFDBFD31FBBE9510057C1AB /* Build configuration list for PBXNativeTarget "GarageSaleApp" */;
+			buildPhases = (
+				BC48D454018E34ED0CE30AD2 /* [CP] Check Pods Manifest.lock */,
+				0CFDBFA71FBBE9510057C1AB /* Sources */,
+				0CFDBFA81FBBE9510057C1AB /* Frameworks */,
+				0CFDBFA91FBBE9510057C1AB /* Resources */,
+				3735A1050D8B252A47C33860 /* [CP] Embed Pods Frameworks */,
+				2A23317E2D9CEAAEC5DE9680 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GarageSaleApp;
+			productName = GarageSaleApp;
+			productReference = 0CFDBFAB1FBBE9510057C1AB /* GarageSaleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CFDBFBE1FBBE9510057C1AB /* GarageSaleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFDBFD61FBBE9510057C1AB /* Build configuration list for PBXNativeTarget "GarageSaleAppTests" */;
+			buildPhases = (
+				95C07DF06C84D9D6C31E55FB /* [CP] Check Pods Manifest.lock */,
+				0CFDBFBB1FBBE9510057C1AB /* Sources */,
+				0CFDBFBC1FBBE9510057C1AB /* Frameworks */,
+				0CFDBFBD1FBBE9510057C1AB /* Resources */,
+				9D844AC30365718C0BEBBB9A /* [CP] Embed Pods Frameworks */,
+				E11B1B20F1B6864F90B907F6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CFDBFC11FBBE9510057C1AB /* PBXTargetDependency */,
+			);
+			name = GarageSaleAppTests;
+			productName = GarageSaleAppTests;
+			productReference = 0CFDBFBF1FBBE9510057C1AB /* GarageSaleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CFDBFC91FBBE9510057C1AB /* GarageSaleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFDBFD91FBBE9510057C1AB /* Build configuration list for PBXNativeTarget "GarageSaleAppUITests" */;
+			buildPhases = (
+				F2C21AA1A460A35D58233862 /* [CP] Check Pods Manifest.lock */,
+				0CFDBFC61FBBE9510057C1AB /* Sources */,
+				0CFDBFC71FBBE9510057C1AB /* Frameworks */,
+				0CFDBFC81FBBE9510057C1AB /* Resources */,
+				7716BDB6A292A65EAFC9169F /* [CP] Embed Pods Frameworks */,
+				AF65B3568EE49D57352A798E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CFDBFCC1FBBE9510057C1AB /* PBXTargetDependency */,
+			);
+			name = GarageSaleAppUITests;
+			productName = GarageSaleAppUITests;
+			productReference = 0CFDBFCA1FBBE9510057C1AB /* GarageSaleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CFDBFA31FBBE9510057C1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Sean Bukich";
+				TargetAttributes = {
+					0CFDBFAA1FBBE9510057C1AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					0CFDBFBE1FBBE9510057C1AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0CFDBFAA1FBBE9510057C1AB;
+					};
+					0CFDBFC91FBBE9510057C1AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0CFDBFAA1FBBE9510057C1AB;
+					};
+				};
+			};
+			buildConfigurationList = 0CFDBFA61FBBE9510057C1AB /* Build configuration list for PBXProject "GarageSaleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CFDBFA21FBBE9510057C1AB;
+			productRefGroup = 0CFDBFAC1FBBE9510057C1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CFDBFAA1FBBE9510057C1AB /* GarageSaleApp */,
+				0CFDBFBE1FBBE9510057C1AB /* GarageSaleAppTests */,
+				0CFDBFC91FBBE9510057C1AB /* GarageSaleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CFDBFA91FBBE9510057C1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDBFB91FBBE9510057C1AB /* LaunchScreen.storyboard in Resources */,
+				0CF122DB1FBF76F400EB8B79 /* ListingDetailImageCell.xib in Resources */,
+				0C08537C1FC00EAF00CF640A /* ListingInfoCell.xib in Resources */,
+				0CB955D31FC391A700A276FC /* GarageSaleTableViewCell.xib in Resources */,
+				0CD3ED661FBD408B00A4253E /* GoogleService-Info.plist in Resources */,
+				0CFDBFB61FBBE9510057C1AB /* Assets.xcassets in Resources */,
+				0CFDBFB41FBBE9510057C1AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDBFBD1FBBE9510057C1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDBFC81FBBE9510057C1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A23317E2D9CEAAEC5DE9680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleApp/Pods-GarageSaleApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleApp/Pods-GarageSaleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3735A1050D8B252A47C33860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleApp/Pods-GarageSaleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleApp/Pods-GarageSaleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7716BDB6A292A65EAFC9169F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleAppUITests/Pods-GarageSaleAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C07DF06C84D9D6C31E55FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GarageSaleAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D844AC30365718C0BEBBB9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleAppTests/Pods-GarageSaleAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF65B3568EE49D57352A798E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleAppUITests/Pods-GarageSaleAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC48D454018E34ED0CE30AD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GarageSaleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E11B1B20F1B6864F90B907F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GarageSaleAppTests/Pods-GarageSaleAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2C21AA1A460A35D58233862 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GarageSaleAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CFDBFA71FBBE9510057C1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDBFB11FBBE9510057C1AB /* ListingVC.swift in Sources */,
+				0CD3ED611FBD2EA400A4253E /* Listing.swift in Sources */,
+				0CF122DE1FBF787C00EB8B79 /* ListingDetailTVC.swift in Sources */,
+				0C41E5CD1FCCCFB900E769AB /* Users.swift in Sources */,
+				0CD3ED6A1FBD4D0800A4253E /* SignInViewController.swift in Sources */,
+				0CB9558F1FC2AA4A00A276FC /* GarageSalesTVC.swift in Sources */,
+				0CFDBFDD1FBC1A780057C1AB /* CustomNavController.swift in Sources */,
+				0CF122DA1FBF76F400EB8B79 /* ListingDetailImageCell.swift in Sources */,
+				0CB955D21FC391A700A276FC /* GarageSaleTableViewCell.swift in Sources */,
+				0CFDBFAF1FBBE9510057C1AB /* AppDelegate.swift in Sources */,
+				0C08537B1FC00EAF00CF640A /* ListingInfoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDBFBB1FBBE9510057C1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDBFC41FBBE9510057C1AB /* GarageSaleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDBFC61FBBE9510057C1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDBFCF1FBBE9510057C1AB /* GarageSaleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CFDBFC11FBBE9510057C1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CFDBFAA1FBBE9510057C1AB /* GarageSaleApp */;
+			targetProxy = 0CFDBFC01FBBE9510057C1AB /* PBXContainerItemProxy */;
+		};
+		0CFDBFCC1FBBE9510057C1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CFDBFAA1FBBE9510057C1AB /* GarageSaleApp */;
+			targetProxy = 0CFDBFCB1FBBE9510057C1AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CFDBFB21FBBE9510057C1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CFDBFB31FBBE9510057C1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CFDBFB71FBBE9510057C1AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CFDBFB81FBBE9510057C1AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CFDBFD11FBBE9510057C1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CFDBFD21FBBE9510057C1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CFDBFD41FBBE9510057C1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37DB65FED6E3FC6C8E116402 /* Pods-GarageSaleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GarageSaleApp/GarageSaleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K443T6W44;
+				INFOPLIST_FILE = GarageSaleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanBukich.GarageSaleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CFDBFD51FBBE9510057C1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41257D04B3109366E7014C3 /* Pods-GarageSaleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GarageSaleApp/GarageSaleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K443T6W44;
+				INFOPLIST_FILE = GarageSaleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanBukich.GarageSaleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CFDBFD71FBBE9510057C1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27B3CC2F6182F7E2DA285369 /* Pods-GarageSaleAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GarageSaleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.GarageSaleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GarageSaleApp.app/GarageSaleApp";
+			};
+			name = Debug;
+		};
+		0CFDBFD81FBBE9510057C1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63DF9FDCD7BF7D78F47F4A39 /* Pods-GarageSaleAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GarageSaleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.GarageSaleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GarageSaleApp.app/GarageSaleApp";
+			};
+			name = Release;
+		};
+		0CFDBFDA1FBBE9510057C1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0846D78831F6A617711FCE /* Pods-GarageSaleAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GarageSaleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.GarageSaleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GarageSaleApp;
+			};
+			name = Debug;
+		};
+		0CFDBFDB1FBBE9510057C1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF45DC476550DB71F0FADB0 /* Pods-GarageSaleAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GarageSaleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.GarageSaleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GarageSaleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CFDBFA61FBBE9510057C1AB /* Build configuration list for PBXProject "GarageSaleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDBFD11FBBE9510057C1AB /* Debug */,
+				0CFDBFD21FBBE9510057C1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFDBFD31FBBE9510057C1AB /* Build configuration list for PBXNativeTarget "GarageSaleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDBFD41FBBE9510057C1AB /* Debug */,
+				0CFDBFD51FBBE9510057C1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFDBFD61FBBE9510057C1AB /* Build configuration list for PBXNativeTarget "GarageSaleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDBFD71FBBE9510057C1AB /* Debug */,
+				0CFDBFD81FBBE9510057C1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFDBFD91FBBE9510057C1AB /* Build configuration list for PBXNativeTarget "GarageSaleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDBFDA1FBBE9510057C1AB /* Debug */,
+				0CFDBFDB1FBBE9510057C1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CFDBFA31FBBE9510057C1AB /* Project object */;
+}
