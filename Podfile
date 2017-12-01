@@ -12,6 +12,7 @@ target 'GarageSaleApp' do
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
+  pod 'Firebase/Storage'
 
 
   target 'GarageSaleAppTests' do

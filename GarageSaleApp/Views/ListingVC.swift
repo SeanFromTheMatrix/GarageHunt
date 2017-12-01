@@ -8,10 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
 
 var myLightGray = UIColor(red:0.78, green:0.78, blue:0.80, alpha:1.0)
 
-class ListingVC: UIViewController, UITextViewDelegate {
+class ListingVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var ref: DatabaseReference!
     
@@ -24,8 +25,6 @@ class ListingVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var stateTextField: UITextField!
     @IBOutlet weak var zipTextField: UITextField!
-    
-//    let refListing = Database.database().reference(withPath: "Listing")
 
     @IBOutlet weak var keyPhraseTextView: UITextView!
     @IBOutlet weak var listingDescriptionTextView: UITextView!
@@ -48,19 +47,13 @@ class ListingVC: UIViewController, UITextViewDelegate {
         
         ref = Database.database().reference()
         
-        
-            
-//            // 3
-//            for item in snapshot.children {
-//                // 4
-//                let listingItem = Listing(name: item as! DataSnapshot, listingImage: , streetAddress: , city: <#String#>, state: <#String#>, zip: <#Int#>)
-//                newItems.append(listingItem)
-//            }
-//
-//            // 5
-//            self.items = newItems
-//            self.tableView.reloadData()
-       // })
+    }
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        print("imagepickerinitiated")
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
     }
     
     @IBAction func saveListing(_ sender: UIBarButtonItem) {
@@ -72,22 +65,37 @@ class ListingVC: UIViewController, UITextViewDelegate {
             let street = streetTextField.text, !street.isEmpty,
             let city = cityTextField.text, !city.isEmpty,
             let state = stateTextField.text, !state.isEmpty,
-            let zipCode = zipTextField.text, !zipCode.isEmpty {
-            
-            let listingDictionary = [
-                "title" : title,
-                "item" : item,
-                "description" : description,
-                "street" : street,
-                "city" : city,
-                "state" : state,
-                "zipCode" : zipCode,
-                "uid" : id
-            ]
+            let zipCode = zipTextField.text, !zipCode.isEmpty,
+            let listingImage = photoImageView {
             
             let listingID = String(describing: Date())
-            ref.child("Listing").child(listingID).setValue(listingDictionary)
-            ref.child("user").child(id).child("listings").child(listingID).setValue(listingID)
+            
+            let imageName = NSUUID().uuidString
+            let storageRef = Storage.storage().reference().child("listing_images").child("\(imageName).png")
+            
+            if let uploadData = UIImagePNGRepresentation(self.photoImageView.image!) {
+                storageRef.putData(uploadData, metadata: nil) {
+                    (metadata, error) in
+                    if error != nil {
+                        print(" the error is : ", error)
+                        return
+                    }
+                    print("here is the metadata: ", metadata, metadata?.downloadURL())
+                    let listingDictionary = [
+                        "title" : title,
+                        "item" : item,
+                        "description" : description,
+                        "street" : street,
+                        "city" : city,
+                        "state" : state,
+                        "zipCode" : zipCode,
+                        "uid" : id,
+                        "imageURL" : metadata?.downloadURL()?.absoluteString
+                        ]
+                    self.ref.child("Listing").child(listingID).setValue(listingDictionary)
+                    self.ref.child("Users").child(id).child("listings").child(listingID).setValue(listingID)
+                }
+            }
             
         } else {
             print("bye")
@@ -99,12 +107,21 @@ class ListingVC: UIViewController, UITextViewDelegate {
                                              style: .default)
             alert.addAction(cancelAction)
             present(alert, animated: true, completion: nil)
-            
             return
         }
-
+        navigationController?.popViewController(animated: true)
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let selectedPhoto = info[UIImagePickerControllerOriginalImage] as! UIImage
+        photoImageView.image = selectedPhoto
+       //garageSaleImage = selectedPhoto
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated:true, completion: nil)
+    }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
 

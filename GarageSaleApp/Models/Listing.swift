@@ -12,7 +12,7 @@ import FirebaseDatabase
 struct Listing {
     
     var name: String
-    var listingImage: UIImage
+    var listingImage: String
 //    var searchTags: [String]
 //    var description: String
 //    var price : String

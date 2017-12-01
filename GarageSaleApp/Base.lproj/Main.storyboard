@@ -41,7 +41,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="B5M-OZ-5Ny"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="71y-TE-KyA">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="yxM-v0-T35"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="loggedIn" id="yxM-v0-T35"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -89,8 +89,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycA-W4-4Ys">
                                 <rect key="frame" x="0.0" y="64" width="375" height="836"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pG3-vk-dEf">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="900"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pG3-vk-dEf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6H-P6-lp5">
                                                 <rect key="frame" x="8" y="310" width="33.5" height="21"/>
@@ -175,12 +175,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yard-sale-backyard" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-Up-Pp2">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="302"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoPhotoSelected" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-Up-Pp2">
+                                                <rect key="frame" x="25" y="18" width="325" height="271"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Tft-bR-MvQ" appends="YES" id="XA8-af-6Rj"/>
+                                                    <outletCollection property="gestureRecognizers" destination="fJ2-av-cmN" appends="YES" id="iS7-i6-eOK"/>
                                                 </connections>
                                             </imageView>
                                         </subviews>
@@ -238,9 +238,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Tft-bR-MvQ"/>
+                <tapGestureRecognizer id="fJ2-av-cmN">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="M6z-Fc-FAm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1420" y="694"/>
+            <point key="canvasLocation" x="1420" y="693.55322338830592"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="2yh-PC-72f">
@@ -320,6 +324,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="yard-sale-backyard" width="287" height="162"/>
+        <image name="NoPhotoSelected" width="320" height="320"/>
     </resources>
 </document>
