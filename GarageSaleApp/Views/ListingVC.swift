@@ -12,38 +12,29 @@ import FirebaseStorage
 
 var myLightGray = UIColor(red:0.78, green:0.78, blue:0.80, alpha:1.0)
 
-class ListingVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ListingVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var ref: DatabaseReference!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var itemsTextField: UITextView!
-    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var itemsTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var streetTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var stateTextField: UITextField!
     @IBOutlet weak var zipTextField: UITextField!
 
-    @IBOutlet weak var keyPhraseTextView: UITextView!
-    @IBOutlet weak var listingDescriptionTextView: UITextView!
+//    @IBOutlet weak var keyPhraseTextView: UITextView!
+//    @IBOutlet weak var listingDescriptionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // adds borders and place holder text to textViews
-        keyPhraseTextView!.layer.borderWidth = 1
-        keyPhraseTextView!.layer.borderColor = myLightGray.cgColor
-        keyPhraseTextView.delegate = self
-        keyPhraseTextView.text = "Use key phrases like electronics, desk or similar phrases to tag your items. Tags are searchable phrases that let others easily search for your items."
-        keyPhraseTextView.textColor = myLightGray
-        
-        listingDescriptionTextView!.layer.borderWidth = 1
-        listingDescriptionTextView!.layer.borderColor = myLightGray.cgColor
-        listingDescriptionTextView.delegate = self
-        listingDescriptionTextView.text = "Use this space to describe your items in detail."
-        listingDescriptionTextView.textColor = myLightGray
+//        let center: NotificationCenter.default
+//        center.addObserver(self, selector: #selector(keyboardDidSAhow(notifications)))
         
         ref = Database.database().reference()
         
@@ -123,33 +114,20 @@ class ListingVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDe
         dismiss(animated:true, completion: nil)
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-
-        if keyPhraseTextView.textColor == myLightGray {
-            keyPhraseTextView.text = ""
-            keyPhraseTextView.textColor = .black
-        }
-        if listingDescriptionTextView.textColor == myLightGray {
-            listingDescriptionTextView.text = ""
-        listingDescriptionTextView.textColor = .black
-        }
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        scrollView.setContentOffset(CGPoint(x: 0, y: 250), animated: true)
+//
+//    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-
-    func textViewDidEndEditing(_ textView: UITextView) {
-
-        if keyPhraseTextView.text == "" {
-            keyPhraseTextView.text = "Use key phrases like electronics, desk or similar phrases to tag your items. Tags are searchable phrases that let others easily search for your items."
-            keyPhraseTextView.textColor = myLightGray
-            
-        }
-        
-        if listingDescriptionTextView.text == "" {
-            listingDescriptionTextView.text = "Use this space to descript your items in detail."
-        listingDescriptionTextView.textColor = myLightGray
-            
-        }
-        
-    }
+    
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+//    }
+    
     @IBAction func logoutTouched(_ sender: UIButton) {
         print("logout touched")
         dismiss(animated: true)
