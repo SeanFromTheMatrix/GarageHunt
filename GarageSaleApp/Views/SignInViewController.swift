@@ -79,13 +79,13 @@ class SignInViewController: UIViewController{//}, GIDSignInDelegate {
         }
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "LoginToList" {
-            let navController = segue.destination as! UINavigationController
-            let detailController = navController.topViewController as! GarageSalesTVC
-            detailController.userData = myUser
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "LoginToList" {
+//            let navController = segue.destination as! UITabBarController
+//            let detailController = navController.
+//            detailController.userData = myUser
+//        }
+//    }
     
     @IBAction func signInDidTouch(_ sender: Any) {
         print("signin pressed")

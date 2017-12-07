@@ -10,16 +10,19 @@
 		0AD4E80C9D22AED79C4EEAAE /* Pods_GarageSaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E419FB91DEF46134BB9025EC /* Pods_GarageSaleAppUITests.framework */; };
 		0C08537B1FC00EAF00CF640A /* ListingInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0853791FC00EAF00CF640A /* ListingInfoCell.swift */; };
 		0C08537C1FC00EAF00CF640A /* ListingInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C08537A1FC00EAF00CF640A /* ListingInfoCell.xib */; };
+		0C0F77401FD8BDC700D106E9 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F773F1FD8BDC700D106E9 /* PinAnnotation.swift */; };
 		0C41E5CD1FCCCFB900E769AB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41E5CC1FCCCFB900E769AB /* Users.swift */; };
+		0C5411BE1FD88F12005AE607 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5411BD1FD88F12005AE607 /* MapKit.framework */; };
 		0CB9558F1FC2AA4A00A276FC /* GarageSalesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB9558E1FC2AA4A00A276FC /* GarageSalesTVC.swift */; };
 		0CB955D21FC391A700A276FC /* GarageSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB955D01FC391A700A276FC /* GarageSaleTableViewCell.swift */; };
 		0CB955D31FC391A700A276FC /* GarageSaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB955D11FC391A700A276FC /* GarageSaleTableViewCell.xib */; };
 		0CD3ED611FBD2EA400A4253E /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3ED601FBD2EA400A4253E /* Listing.swift */; };
 		0CD3ED661FBD408B00A4253E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3ED651FBD408B00A4253E /* GoogleService-Info.plist */; };
 		0CD3ED6A1FBD4D0800A4253E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3ED691FBD4D0800A4253E /* SignInViewController.swift */; };
+		0CE1874C1FD1F68D00EAFD48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1874B1FD1F68D00EAFD48 /* ViewController.swift */; };
 		0CF122DA1FBF76F400EB8B79 /* ListingDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF122D81FBF76F400EB8B79 /* ListingDetailImageCell.swift */; };
 		0CF122DB1FBF76F400EB8B79 /* ListingDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF122D91FBF76F400EB8B79 /* ListingDetailImageCell.xib */; };
-		0CF122DE1FBF787C00EB8B79 /* ListingDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF122DD1FBF787C00EB8B79 /* ListingDetailTVC.swift */; };
+		0CF75F3B1FD3DC7E00C15780 /* ListingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF75F3A1FD3DC7E00C15780 /* ListingDetailViewController.swift */; };
 		0CFDBFAF1FBBE9510057C1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFAE1FBBE9510057C1AB /* AppDelegate.swift */; };
 		0CFDBFB11FBBE9510057C1AB /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDBFB01FBBE9510057C1AB /* ListingVC.swift */; };
 		0CFDBFB41FBBE9510057C1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDBFB21FBBE9510057C1AB /* Main.storyboard */; };
@@ -52,7 +55,9 @@
 /* Begin PBXFileReference section */
 		0C0853791FC00EAF00CF640A /* ListingInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInfoCell.swift; sourceTree = "<group>"; };
 		0C08537A1FC00EAF00CF640A /* ListingInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingInfoCell.xib; sourceTree = "<group>"; };
+		0C0F773F1FD8BDC700D106E9 /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		0C41E5CC1FCCCFB900E769AB /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		0C5411BD1FD88F12005AE607 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0C9D29FF1FCF7FBD00E256D5 /* GarageSaleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GarageSaleApp.entitlements; sourceTree = "<group>"; };
 		0CB9558E1FC2AA4A00A276FC /* GarageSalesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageSalesTVC.swift; sourceTree = "<group>"; };
 		0CB955D01FC391A700A276FC /* GarageSaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageSaleTableViewCell.swift; sourceTree = "<group>"; };
@@ -60,10 +65,11 @@
 		0CD3ED601FBD2EA400A4253E /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		0CD3ED651FBD408B00A4253E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CD3ED691FBD4D0800A4253E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0CE1874B1FD1F68D00EAFD48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CF122D81FBF76F400EB8B79 /* ListingDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailImageCell.swift; sourceTree = "<group>"; };
 		0CF122D91FBF76F400EB8B79 /* ListingDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingDetailImageCell.xib; sourceTree = "<group>"; };
-		0CF122DD1FBF787C00EB8B79 /* ListingDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailTVC.swift; sourceTree = "<group>"; };
-		0CFDBFAB1FBBE9510057C1AB /* GarageSaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarageSaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF75F3A1FD3DC7E00C15780 /* ListingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailViewController.swift; sourceTree = "<group>"; };
+		0CFDBFAB1FBBE9510057C1AB /* Garage Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garage Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFDBFAE1FBBE9510057C1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CFDBFB01FBBE9510057C1AB /* ListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
 		0CFDBFB31FBBE9510057C1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5411BE1FD88F12005AE607 /* MapKit.framework in Frameworks */,
 				DDA7E0D62FB9DDC0F3A2C42F /* Pods_GarageSaleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +157,7 @@
 				0CB955CC1FC38F8E00A276FC /* GarageSalesView */,
 				0CF122DC1FBF783400EB8B79 /* ListingDetail */,
 				0CFDBFB01FBBE9510057C1AB /* ListingVC.swift */,
+				0CE1874B1FD1F68D00EAFD48 /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,7 +176,8 @@
 		0CF122DC1FBF783400EB8B79 /* ListingDetail */ = {
 			isa = PBXGroup;
 			children = (
-				0CF122DD1FBF787C00EB8B79 /* ListingDetailTVC.swift */,
+				0CF75F3A1FD3DC7E00C15780 /* ListingDetailViewController.swift */,
+				0C0F773F1FD8BDC700D106E9 /* PinAnnotation.swift */,
 				0CF122941FBE89DD00EB8B79 /* ListingDetailCellFileAndXib */,
 			);
 			path = ListingDetail;
@@ -189,7 +198,7 @@
 		0CFDBFAC1FBBE9510057C1AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CFDBFAB1FBBE9510057C1AB /* GarageSaleApp.app */,
+				0CFDBFAB1FBBE9510057C1AB /* Garage Hunt.app */,
 				0CFDBFBF1FBBE9510057C1AB /* GarageSaleAppTests.xctest */,
 				0CFDBFCA1FBBE9510057C1AB /* GarageSaleAppUITests.xctest */,
 			);
@@ -234,6 +243,7 @@
 		2CFAA5E7529E3ACDB6585E0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C5411BD1FD88F12005AE607 /* MapKit.framework */,
 				B3E4B73876CE96C18E2370B3 /* Pods_GarageSaleApp.framework */,
 				E17A70E140F291D6BCE2C56B /* Pods_GarageSaleAppTests.framework */,
 				E419FB91DEF46134BB9025EC /* Pods_GarageSaleAppUITests.framework */,
@@ -274,7 +284,7 @@
 			);
 			name = GarageSaleApp;
 			productName = GarageSaleApp;
-			productReference = 0CFDBFAB1FBBE9510057C1AB /* GarageSaleApp.app */;
+			productReference = 0CFDBFAB1FBBE9510057C1AB /* Garage Hunt.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0CFDBFBE1FBBE9510057C1AB /* GarageSaleAppTests */ = {
@@ -334,6 +344,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 						};
@@ -575,10 +588,12 @@
 			files = (
 				0CFDBFB11FBBE9510057C1AB /* ListingVC.swift in Sources */,
 				0CD3ED611FBD2EA400A4253E /* Listing.swift in Sources */,
-				0CF122DE1FBF787C00EB8B79 /* ListingDetailTVC.swift in Sources */,
 				0C41E5CD1FCCCFB900E769AB /* Users.swift in Sources */,
 				0CD3ED6A1FBD4D0800A4253E /* SignInViewController.swift in Sources */,
+				0CF75F3B1FD3DC7E00C15780 /* ListingDetailViewController.swift in Sources */,
+				0C0F77401FD8BDC700D106E9 /* PinAnnotation.swift in Sources */,
 				0CB9558F1FC2AA4A00A276FC /* GarageSalesTVC.swift in Sources */,
+				0CE1874C1FD1F68D00EAFD48 /* ViewController.swift in Sources */,
 				0CFDBFDD1FBC1A780057C1AB /* CustomNavController.swift in Sources */,
 				0CF122DA1FBF76F400EB8B79 /* ListingDetailImageCell.swift in Sources */,
 				0CB955D21FC391A700A276FC /* GarageSaleTableViewCell.swift in Sources */,
@@ -750,13 +765,14 @@
 			baseConfigurationReference = 37DB65FED6E3FC6C8E116402 /* Pods-GarageSaleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GarageSaleApp/GarageSaleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K443T6W44;
 				INFOPLIST_FILE = GarageSaleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanBukich.GarageSaleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Garage Hunt";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -767,13 +783,14 @@
 			baseConfigurationReference = D41257D04B3109366E7014C3 /* Pods-GarageSaleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = GarageSaleApp/GarageSaleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K443T6W44;
 				INFOPLIST_FILE = GarageSaleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanBukich.GarageSaleApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Garage Hunt";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
