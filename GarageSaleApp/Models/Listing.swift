@@ -10,10 +10,10 @@ import UIKit
 import FirebaseDatabase
 
 struct Listing {
-    
+
     var name: String
     var imageURLString: String
-//    var searchTags: [String]
+    var searchTags: [String]
     var description: String
 //    var price : String
     var streetAddress: String
@@ -24,7 +24,7 @@ struct Listing {
     var latitude: Double
     var longitude: Double
 //    var nearbyListings: [Listing]
-    
+
     // Called when Writing this Data Object
     func toAnyObject() -> Any {
         return [
@@ -39,3 +39,4 @@ struct Listing {
         ]
     }
 }
+

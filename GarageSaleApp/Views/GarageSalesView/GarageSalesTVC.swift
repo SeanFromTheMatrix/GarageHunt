@@ -11,11 +11,14 @@ class GarageSalesTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayOfCellData = [Listing(name: "garage sale", imageURLString: "", description: "", streetAddress: "24795 Crown Royale", city: "Laguna Niguel", state: "Ca", zip: 92677, latitude: 0.0, longitude: 0.0)]
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+
+        arrayOfCellData = [Listing(name: "garage sale", imageURLString: "", searchTags: [""], description: "", streetAddress: "24795 Crown Royale", city: "Laguna Niguel", state: "Ca", zip: 92677, latitude: 0.0, longitude: 0.0)]
         tableView.register(UINib(nibName: "GarageSaleTableViewCell", bundle: nil), forCellReuseIdentifier: "GarageSaleTableViewCell")
             fillTable()
         
     }
+   
 
     func fillTable() {
         ref = Database.database().reference()
@@ -39,11 +42,12 @@ class GarageSalesTVC: UITableViewController {
                         let state = listingDictionary["state"],
                         let zipString = listingDictionary["zipCode"],
                         let imageURL = listingDictionary["imageURL"],
+                        let item = listingDictionary["item"],
                         let lat = Double(latitude),
                         let long = Double(longitude),
                         let zip = Int(zipString) {
                         
-                        self.arrayOfCellData.append(Listing(name: name, imageURLString: imageURL, description: description, streetAddress: street, city: city, state: state, zip: zip, latitude: lat, longitude: long))
+                        self.arrayOfCellData.append(Listing(name: name, imageURLString: imageURL, searchTags: [item], description: description, streetAddress: street, city: city, state: state, zip: zip, latitude: lat, longitude: long))
                         print("array count is ", self.arrayOfCellData.count)
                         
                     } else {

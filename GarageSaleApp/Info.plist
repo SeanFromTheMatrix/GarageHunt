@@ -19,11 +19,19 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.2.1</string>
+	<string>0.8</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>GarageSaleApp</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>GarageSaleApp</string>
+	<key>NSLocationUsageDescription</key>
+	<string>GarageSaleApp</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>GarageSaleApp</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string></string>
 	<key>UILaunchStoryboardName</key>

@@ -25,7 +25,8 @@ class SignInViewController: UIViewController{//}, GIDSignInDelegate {
         super.viewDidLoad()
         //GIDSignIn.sharedInstance().uiDelegate = self
        // GIDSignIn.sharedInstance().signIn()
-        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+
         //1
         Auth.auth().addStateDidChangeListener() { auth, user in
             //2

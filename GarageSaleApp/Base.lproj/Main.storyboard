@@ -11,7 +11,6 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
         </array>
     </customFonts>
@@ -19,7 +18,7 @@
         <!--Happy Hunting-->
         <scene sceneID="njS-OL-6ge">
             <objects>
-                <tableViewController id="uGy-aW-yyR" customClass="GarageSalesTVC" customModule="GarageSaleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uGy-aW-yyR" customClass="GarageSalesTVC" customModule="Garage_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="krQ-u1-rLq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +51,7 @@
         <!--Listing Detail View Controller-->
         <scene sceneID="kYo-go-vkn">
             <objects>
-                <viewController id="ihc-vI-qqv" customClass="ListingDetailViewController" customModule="GarageSaleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ihc-vI-qqv" customClass="ListingDetailViewController" customModule="Garage_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bXh-hd-xzf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,9 +108,13 @@
                                             </textView>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7De-BE-nFS">
                                                 <rect key="frame" x="14" y="550" width="346" height="170"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="346" id="RfY-Sv-FcT"/>
+                                                    <constraint firstAttribute="height" constant="170" id="Yt4-Pt-jAy"/>
+                                                </constraints>
                                             </mapView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.91380047798156738" green="0.92137545347213745" blue="0.93334490060806274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Ojw-Zl-qJB" secondAttribute="trailing" id="1U2-yW-wDU"/>
                                             <constraint firstItem="tPb-RK-fy8" firstAttribute="leading" secondItem="8pR-rY-Ryn" secondAttribute="leading" id="2HA-CS-DGA"/>
@@ -141,7 +144,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91380047798156738" green="0.92137545347213745" blue="0.93334490060806274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7xb-iq-ZGj" firstAttribute="bottom" secondItem="Ms1-5T-4UP" secondAttribute="bottom" id="EOz-If-PmO"/>
                             <constraint firstItem="7xb-iq-ZGj" firstAttribute="leading" secondItem="Ms1-5T-4UP" secondAttribute="leading" id="PSB-cA-3uF"/>
@@ -187,15 +190,15 @@
         <!--Account-->
         <scene sceneID="cdc-hx-49w">
             <objects>
-                <viewController id="Oj6-KM-FuZ" customClass="AccountViewController" customModule="GarageSaleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oj6-KM-FuZ" customClass="AccountViewController" customModule="Garage_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ze-Yr-Mkb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-oc-Hg4">
-                                <rect key="frame" x="164" y="347" width="46" height="30"/>
+                                <rect key="frame" x="144" y="349" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Signout"/>
                                 <connections>
                                     <action selector="logoutTouched:" destination="Oj6-KM-FuZ" eventType="touchUpInside" id="shv-Sd-blf"/>
                                 </connections>
@@ -204,16 +207,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Whj-qh-VAf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="UeO-fX-bgD"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="icons8-male-user-50" id="UeO-fX-bgD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuW-8V-LLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-340" y="975"/>
+            <point key="canvasLocation" x="-340" y="974.6626686656673"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="2yh-PC-72f">
             <objects>
-                <viewController id="s9I-F8-Ewo" customClass="SignInViewController" customModule="GarageSaleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s9I-F8-Ewo" customClass="SignInViewController" customModule="Garage_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O32-QW-gP4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +274,7 @@
         <scene sceneID="N4R-h9-te3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbV-aU-BJv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Post" id="BfV-Ze-06k"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="icons8-add-50" id="BfV-Ze-06k"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CIt-J3-Ak8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -289,7 +292,7 @@
         <!--ListingVC-->
         <scene sceneID="oSr-jl-v5e">
             <objects>
-                <viewController storyboardIdentifier="Second" id="GoH-Vl-RWY" customClass="ListingVC" customModule="GarageSaleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="GoH-Vl-RWY" customClass="ListingVC" customModule="Garage_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9zK-rP-ciT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,61 +316,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Type something here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="91m-GM-4Hy">
-                                                <rect key="frame" x="8" y="339" width="359" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="buf-IG-H4L"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Street Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFp-zT-blY">
-                                                <rect key="frame" x="8" y="714" width="359" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="VdU-Vy-lmW"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-PG-XGa">
-                                                <rect key="frame" x="8" y="752" width="359" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="4W7-HA-aHl"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-CL-lMD">
-                                                <rect key="frame" x="8" y="790" width="359" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="2d4-NP-Bdc"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Zipcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ey0-nD-XYg">
-                                                <rect key="frame" x="8" y="828" width="359" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="jfl-Pu-Yqg"/>
-                                                </connections>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set a Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNA-4r-WT8">
                                                 <rect key="frame" x="8" y="685" width="133" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -382,28 +330,6 @@
                                                     <outletCollection property="gestureRecognizers" destination="diV-Ad-DM6" appends="YES" id="XF7-74-MtL"/>
                                                 </connections>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Use some key phrases to describe your items" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-th-PBc">
-                                                <rect key="frame" x="8" y="419" width="359" height="74"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="VYU-LS-ltI"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Use this space to describe your items in detail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZQ-Vc-SOq">
-                                                <rect key="frame" x="8" y="537" width="359" height="131"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="GoH-Vl-RWY" id="IF3-Fg-vA7"/>
-                                                </connections>
-                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yf-iW-coQ">
                                                 <rect key="frame" x="51" y="862" width="272" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -422,6 +348,61 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kvP-90-BRF">
+                                                <rect key="frame" x="8" y="336" width="359" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y3P-Q9-673">
+                                                <rect key="frame" x="8" y="419" width="359" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-5N-Qvj">
+                                                <rect key="frame" x="8" y="537" width="359" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="udX-6e-3HL">
+                                                <rect key="frame" x="8" y="714" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-CO-aHc">
+                                                <rect key="frame" x="8" y="752" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-Ks-JFQ">
+                                                <rect key="frame" x="8" y="790" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SMX-df-Wqx">
+                                                <rect key="frame" x="8" y="828" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.25" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -457,14 +438,14 @@
                     <navigationItem key="navigationItem" id="oI2-B8-ZIV"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="cityTextField" destination="dY1-CL-lMD" id="NvI-UL-e2V"/>
-                        <outlet property="descriptionTextField" destination="CZQ-Vc-SOq" id="bML-Zh-4yW"/>
-                        <outlet property="itemsTextField" destination="RAq-th-PBc" id="biM-zl-iqI"/>
+                        <outlet property="cityTextField" destination="SrG-CO-aHc" id="ttI-aa-Uqg"/>
+                        <outlet property="descriptionTextField" destination="3u8-5N-Qvj" id="TQm-e5-CXK"/>
+                        <outlet property="itemsTextField" destination="Y3P-Q9-673" id="1c5-K6-X2k"/>
                         <outlet property="photoImageView" destination="iEB-8r-QFm" id="yxy-ZH-YyK"/>
-                        <outlet property="stateTextField" destination="aL8-PG-XGa" id="Vw3-ev-nqK"/>
-                        <outlet property="streetTextField" destination="eFp-zT-blY" id="Y1n-Vq-3Yt"/>
-                        <outlet property="titleTextField" destination="91m-GM-4Hy" id="8c2-0J-zcr"/>
-                        <outlet property="zipTextField" destination="ey0-nD-XYg" id="fac-gU-yqW"/>
+                        <outlet property="stateTextField" destination="bFU-Ks-JFQ" id="iPz-7y-0Gf"/>
+                        <outlet property="streetTextField" destination="udX-6e-3HL" id="77X-dQ-ds1"/>
+                        <outlet property="titleTextField" destination="kvP-90-BRF" id="MJX-Nh-MoP"/>
+                        <outlet property="zipTextField" destination="SMX-df-Wqx" id="5en-bZ-lon"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfL-Cm-tyD" sceneMemberID="firstResponder"/>
@@ -476,11 +457,11 @@
             </objects>
             <point key="canvasLocation" x="1336.8" y="336.43178410794604"/>
         </scene>
-        <!--Search-->
+        <!--Browse-->
         <scene sceneID="Df1-cB-TPw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iua-B8-YbK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="vhC-q9-Wxq"/>
+                    <tabBarItem key="tabBarItem" title="Browse" image="icons8-browse-page-50 (1)" id="vhC-q9-Wxq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gqW-0P-cm4">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -498,5 +479,8 @@
     </scenes>
     <resources>
         <image name="NoPhotoSelected" width="320" height="320"/>
+        <image name="icons8-add-50" width="25" height="25"/>
+        <image name="icons8-browse-page-50 (1)" width="25" height="25"/>
+        <image name="icons8-male-user-50" width="25" height="25"/>
     </resources>
 </document>
