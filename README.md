@@ -11,11 +11,15 @@ Project structure
 <img width="55" alt="screen shot 2017-12-08 at 12 27 32 am" src="https://user-images.githubusercontent.com/29612080/33757366-ac6422e0-dbae-11e7-9333-8a5619ef9466.png">
 <img width="376" alt="screen shot 2017-12-08 at 12 16 35 am" src="https://user-images.githubusercontent.com/29612080/33757371-b311df4c-dbae-11e7-90ea-af414681e3bf.png">
 <img width="55" alt="screen shot 2017-12-08 at 12 27 32 am" src="https://user-images.githubusercontent.com/29612080/33757377-b56fe28e-dbae-11e7-8ade-77e3139059c3.png">
+<img width="486" alt="screen shot 2017-12-08 at 12 32 01 am" src="https://user-images.githubusercontent.com/29612080/33757515-5ea831e4-dbaf-11e7-9afc-0f0c65c3e3f9.png">
+<img width="55" alt="screen shot 2017-12-08 at 12 27 32 am" src="https://user-images.githubusercontent.com/29612080/33757366-ac6422e0-dbae-11e7-9333-8a5619ef9466.png">
 <img width="376" alt="screen shot 2017-12-08 at 12 16 13 am" src="https://user-images.githubusercontent.com/29612080/33757395-c67a1360-dbae-11e7-90c9-d98f3066adce.png">
 <img width="55" alt="screen shot 2017-12-08 at 12 27 32 am" src="https://user-images.githubusercontent.com/29612080/33757402-cda98d1e-dbae-11e7-9617-882b4e64984a.png">
 <img width="376" alt="screen shot 2017-12-08 at 12 15 49 am" src="https://user-images.githubusercontent.com/29612080/33757405-d23daa90-dbae-11e7-8312-c95c0c325aa5.png">
 <img width="55" alt="screen shot 2017-12-08 at 12 27 32 am" src="https://user-images.githubusercontent.com/29612080/33757410-d54c0038-dbae-11e7-9883-753c80def04e.png">
 <img width="377" alt="screen shot 2017-12-08 at 12 17 16 am" src="https://user-images.githubusercontent.com/29612080/33757415-d9a9d510-dbae-11e7-9673-2ecb3c46d94a.png">
+
+
 
 
 Project flow
