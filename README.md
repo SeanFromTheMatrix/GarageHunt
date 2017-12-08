@@ -7,6 +7,7 @@ set descriptive keywords to help hunters narrow down their search.
 Project structure
 
 The project has five view controllers, all embedded in a tab bar controller.
+<img width="375" alt="screen shot 2017-12-08 at 12 16 58 am" src="https://user-images.githubusercontent.com/29612080/33757137-ab807e24-dbad-11e7-9225-90e4ac1d3197.png"> ->
 
 Project flow
 
